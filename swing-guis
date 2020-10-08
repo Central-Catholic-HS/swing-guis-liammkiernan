@@ -1,0 +1,17 @@
+import javax.swing.JOptionPane;
+public class Message
+{
+    public static void main (String[]args)
+    {
+      String inputString;
+      String sport;  
+      String level;  
+      double weight;
+      
+      sport = JOptionPane.showInputDialog("What sport do you play?");
+      level = JOptionPane.showInputDialog("Where would you like to end up playing your sport? (pros, college, etc.)");
+      inputString = JOptionPane.showInputDialog("How much do you weigh in lbs?");
+      weight = Double.parseDouble(inputString);
+      JOptionPane.showMessageDialog(null, "Do you want to play " + sport + " in "+ level + " at " + weight + " pounds? Click here!");
+    }
+}
